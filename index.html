@@ -420,51 +420,6 @@
             background: rgba(74, 205, 196, 0.1);
         }
 
-        /* ===== VISUALIZATION SECTION ===== */
-        .visualization-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-            gap: 2rem;
-            margin-top: 3rem;
-        }
-
-        .visualization-card {
-            background: linear-gradient(135deg, rgba(8, 20, 33, 0.8) 0%, rgba(3, 7, 17, 0.9) 100%);
-            border-radius: 10px;
-            overflow: hidden;
-            transition: var(--transition);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-            border: 1px solid rgba(74, 205, 196, 0.1);
-        }
-
-        .visualization-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
-            border-color: rgba(74, 205, 196, 0.3);
-        }
-
-        .visualization-image {
-            height: 200px;
-            background: linear-gradient(135deg, rgba(26, 83, 92, 0.3) 0%, rgba(26, 83, 92, 0.1) 100%);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .visualization-content {
-            padding: 1.5rem;
-        }
-
-        .visualization-title {
-            font-size: 1.5rem;
-            margin-bottom: 0.5rem;
-            color: var(--light);
-        }
-
-        .visualization-description {
-            margin-bottom: 1.5rem;
-            font-size: 0.95rem;
-        }
-
         /* ===== BLOGS SECTION ===== */
         .blogs-grid {
             display: grid;
@@ -685,7 +640,7 @@
                 font-size: 2rem;
             }
             
-            .projects-grid, .blogs-grid, .visualization-grid {
+            .projects-grid, .blogs-grid {
                 grid-template-columns: 1fr;
             }
         }
@@ -703,7 +658,6 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#skills">Skills</a></li>
-                <li><a href="#visualizations">Visualizations</a></li>
                 <li><a href="#blogs">Blogs</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -743,12 +697,11 @@
                         <p class="project-description">Machine learning model to predict the likelihood of diabetes based on patient health metrics with 87% accuracy.</p>
                         <div class="project-tags">
                             <span class="tag">Python</span>
-                            <span class="tag">Scikit-learn</span>
-                            <span class="tag">Logistic Regression</span>
+                            <span class="tag">Machine Learning</span>
+                            <span class="tag">sklearn</span>
                         </div>
                         <div class="project-links">
-                            <a href="#"><i class="fab fa-github"></i></a>
-                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="https://diabetes-app-with-app-fqfhjjxhqjrymhqzxifnrj.streamlit.app/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
                         </div>
                     </div>
                 </div>
@@ -759,28 +712,26 @@
                         <p class="project-description">Regression model to predict the compressive strength of concrete mixtures with 94% accuracy.</p>
                         <div class="project-tags">
                             <span class="tag">Python</span>
-                            <span class="tag">Random Forest</span>
+                            <span class="tag">Machine Learning</span>
                             <span class="tag">Regression</span>
                         </div>
                         <div class="project-links">
-                            <a href="#"><i class="fab fa-github"></i></a>
-                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="https://cement-compressive-strength-prediction.onrender.com" target="_blank"><i class="fas fa-external-link-alt"></i></a>
                         </div>
                     </div>
                 </div>
                 <div class="project-card">
                     <div class="project-image"></div>
                     <div class="project-content">
-                        <h3 class="project-title">Customer Segmentation</h3>
-                        <p class="project-description">Unsupervised learning model that segments customers into distinct groups for targeted marketing campaigns.</p>
+                        <h3 class="project-title">COVID-19 Mortality Rate</h3>
+                        <p class="project-description">Analysis and prediction of COVID-19 mortality rates based on demographic and health factors.</p>
                         <div class="project-tags">
-                            <span class="tag">Clustering</span>
-                            <span class="tag">K-Means</span>
-                            <span class="tag">PCA</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">Data Analysis</span>
+                            <span class="tag">Machine Learning</span>
                         </div>
                         <div class="project-links">
                             <a href="#"><i class="fab fa-github"></i></a>
-                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
                         </div>
                     </div>
                 </div>
@@ -791,12 +742,11 @@
                         <p class="project-description">Predicting the age of abalone from physical measurements using various regression techniques.</p>
                         <div class="project-tags">
                             <span class="tag">Python</span>
-                            <span class="tag">XGBoost</span>
+                            <span class="tag">Machine Learning</span>
                             <span class="tag">Regression</span>
                         </div>
                         <div class="project-links">
-                            <a href="#"><i class="fab fa-github"></i></a>
-                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="https://abalone-age-predictor-z867.onrender.com" target="_blank"><i class="fas fa-external-link-alt"></i></a>
                         </div>
                     </div>
                 </div>
@@ -840,7 +790,7 @@
                     <ul class="skill-list">
                         <li class="skill-item">Git</li>
                         <li class="skill-item">GitHub</li>
-                        <li class="skill-item">GitLab</li>
+                        <!-- <li class="skill-item">GitLab</li> -->
                     </ul>
                 </div>
                 <div class="skill-category">
@@ -848,7 +798,7 @@
                     <ul class="skill-list">
                         <li class="skill-item">Pandas</li>
                         <li class="skill-item">NumPy</li>
-                        <li class="skill-item">Apache Spark</li>
+                        <!-- <li class="skill-item">Apache Spark</li> -->
                     </ul>
                 </div>
                 <div class="skill-category">
@@ -857,38 +807,8 @@
                         <li class="skill-item">Matplotlib</li>
                         <li class="skill-item">Seaborn</li>
                         <li class="skill-item">Plotly</li>
-                        <li class="skill-item">Tableau</li>
+                        <!-- <li class="skill-item">Tableau</li> -->
                     </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ===== VISUALIZATION SECTION ===== -->
-    <section id="visualizations">
-        <div class="container">
-            <h2>Data Visualizations</h2>
-            <div class="visualization-grid">
-                <div class="visualization-card">
-                    <div class="visualization-image"></div>
-                    <div class="visualization-content">
-                        <h3 class="visualization-title">Diabetes Correlation Matrix</h3>
-                        <p class="visualization-description">Heatmap showing correlations between different health metrics and diabetes prevalence.</p>
-                    </div>
-                </div>
-                <div class="visualization-card">
-                    <div class="visualization-image"></div>
-                    <div class="visualization-content">
-                        <h3 class="visualization-title">Concrete Strength Analysis</h3>
-                        <p class="visualization-description">Interactive visualization showing how different components affect concrete strength.</p>
-                    </div>
-                </div>
-                <div class="visualization-card">
-                    <div class="visualization-image"></div>
-                    <div class="visualization-content">
-                        <h3 class="visualization-title">Customer Segments</h3>
-                        <p class="visualization-description">3D scatter plot showing distinct customer segments based on purchasing behavior.</p>
-                    </div>
                 </div>
             </div>
         </div>
@@ -899,6 +819,21 @@
         <div class="container">
             <h2>Latest Blogs</h2>
             <div class="blogs-grid">
+                <div class="blog-card">
+                    <div class="blog-image"></div>
+                    <div class="blog-content">
+                        <h3 class="blog-title">Data Cleaning Best Practices</h3>
+                        <p class="blog-excerpt">Essential techniques for preparing your data for machine learning models.</p>
+                        <div class="blog-meta">
+                            <span>April 3, 2023</span>
+                            <span>6 min read</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://medium.com/@ajidagba19/9092ada117ed" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!--
                 <div class="blog-card">
                     <div class="blog-image"></div>
                     <div class="blog-content">
@@ -913,17 +848,6 @@
                 <div class="blog-card">
                     <div class="blog-image"></div>
                     <div class="blog-content">
-                        <h3 class="blog-title">Data Cleaning Best Practices</h3>
-                        <p class="blog-excerpt">Essential techniques for preparing your data for machine learning models.</p>
-                        <div class="blog-meta">
-                            <span>April 3, 2023</span>
-                            <span>6 min read</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="blog-card">
-                    <div class="blog-image"></div>
-                    <div class="blog-content">
                         <h3 class="blog-title">Hyperparameter Tuning Methods</h3>
                         <p class="blog-excerpt">Comparing grid search, random search, and Bayesian optimization for model tuning.</p>
                         <div class="blog-meta">
@@ -932,6 +856,7 @@
                         </div>
                     </div>
                 </div>
+                -->
             </div>
         </div>
     </section>
@@ -957,7 +882,7 @@
                     </div>
                 </div>
                 <div class="contact-form">
-                    <form id="contactForm">
+                    <form id="contactForm" action="mailto:ajidagba19@gmail.com" method="post" enctype="text/plain">
                         <div class="form-group">
                             <label for="name">Name</label>
                             <input type="text" id="name" class="form-control" required>
@@ -1067,9 +992,9 @@
         // ===== FORM SUBMISSION =====
         const contactForm = document.getElementById('contactForm');
         contactForm.addEventListener('submit', (e) => {
-            e.preventDefault();
+            // Form will submit to mailto:ajidagba19@gmail.com
+            // This is a client-side solution for email functionality
             alert('Thank you for your message! I will get back to you soon.');
-            contactForm.reset();
         });
     </script>
 </body>
